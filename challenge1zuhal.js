@@ -1,0 +1,119 @@
+//chart 1
+
+let waterBuffer = document.getElementById('waterBuffer').getContext('2d');
+
+    let wBuffer = new Chart(waterBuffer, {
+      type: 'doughnut',
+      data: {
+        labels: ['Prikwater', 'Water'],
+        indexLabelFontSize: 30,
+        datasets:[
+          {  
+            label: '',
+           
+            backgroundColor: ['#64A9AE', '#40736E'],
+            data: [35,65],
+
+          }
+        ]
+      },
+      options: {
+        title: {
+            display: true,
+            text: 'Watervoorraad in liters',
+            fontFamily:'Signpainter',
+            fontSize: 12,
+            
+        },
+        responsive: false
+      }
+     });
+
+//chart 2
+
+let food = document.getElementById('foodBuffer').getContext('2d');
+
+let fBuffer =  new Chart(food, {
+    type: 'bar', 
+    data:{
+      labels:['snacks', 'groente', 'brood', 'fruit'],
+      datasets:[ 
+        {
+          label: 'in kilos', 
+          backgroundColor: ['#64A9AE', '#D4D1CC','#136B91', '#40736E'],
+          borderWidth: 2,
+          data:[400,356,334,501]
+        }
+      ]   
+    },
+    options: {
+      title: {
+          display: true,
+          text: 'Overzicht voedselvoorraad',
+          fontFamily:'Signpainter',
+          fontSize: 12,
+      },
+      responsive: false, // Dit zorgt ervoor dat het kan meeschalen of niet -
+      
+      legend: false
+
+    }
+});
+
+
+//chart 3
+
+let speed = document.getElementById('speedBuffer').getContext('2d');
+
+let sBuffer = new Chart(speed, {
+  type: 'line',
+  data: {
+    labels: [2010,2020,2030,2040, 2050],
+    datasets: [{ 
+        data: [8933,2234,7777,6453,8000],
+        label: "Brandstofverbruik",
+        borderColor: "#3e95cd",
+        fill: true
+      }
+    ]
+  },
+  options: {
+    title: {
+      display: true,
+      fontFamily:'Signpainter',
+      fontSize:12,
+      text: 'Brandstofverbruik per decennium'
+    },
+    responsive: false
+  }
+});
+
+// chart 4
+
+new Chart(document.getElementById("bar-chart-horizontal"), {
+    type: 'horizontalBar',
+    data: {
+      labels: ["Troposfeer", "Stratosfeer", "Mesosfeer", "Thermosfeer", "Exosfeer"],
+      datasets: [
+        {
+          label: "Population (millions)",
+          backgroundColor: ["#40736E", "#BFD2C7","#136B91","#969696","#3e95cd"],
+          data: [50,80,125,650,700]
+        }
+      ]
+    },
+    options: {
+
+      legend: { display: false },
+      title: {
+        display: true,
+        text: 'Lagen van de atmosfeer in km',
+        fontFamily:'Signpainter',
+        textAlign:'center',
+
+            fontSize: 12,
+        color:"#FFFFFF"
+      },
+      responsive: false
+    }
+});
