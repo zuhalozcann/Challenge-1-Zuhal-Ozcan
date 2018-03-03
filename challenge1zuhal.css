@@ -1,0 +1,30 @@
+/*mobile first*/
+
+body{
+	background-color:#FFFFFF;
+}
+
+h1{
+	font-family:Arial;
+	font-size:50px;
+	margin-left:10px;
+}
+
+	.flex-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	  -webkit-flex-wrap:wrap;
+	}
+
+	.water, .food, .speed, .atmosfeer{
+		display: flex;
+		justify-content: center;
+		height: 300px !important;
+		width: 100%  !important;
+	}
+
+	canvas#waterBuffer, canvas#foodBuffer, canvas#speedBuffer, canvas#bar-chart-horizontal{
+		width: 500px;
+		height:auto;
+	}
+
