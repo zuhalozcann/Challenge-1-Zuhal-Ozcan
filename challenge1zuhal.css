@@ -60,3 +60,26 @@ h1{
 	}
 }
 /* einde tablet*/
+
+/* pc-scherm*/
+@media (min-width: 1024px) {
+
+	.flex-container {
+	  display: flex;
+	  flex-wrap: wrap;
+	}
+
+	.water, .food, .speed, .atmosfeer{
+		display: flex;
+		justify-content: center;
+		height: 300px !important;
+		width: 50%  !important;
+	}
+
+	canvas#waterBuffer, canvas#foodBuffer, canvas#speedBuffer, canvas#bar-chart-horizontal{
+		width: 80%;
+	}
+
+}
+/*einde pc scherm*/
+
