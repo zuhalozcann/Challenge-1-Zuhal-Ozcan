@@ -5,9 +5,11 @@ body{
 }
 
 h1{
-	font-family:Arial;
-	font-size:50px;
-	margin-left:10px;
+	color:grey;
+	font-family:'Signpainter';
+	font-size:80px;
+	font-weight:normal;
+	text-align:center;
 }
 
 	.flex-container {
@@ -32,9 +34,11 @@ h1{
 
 @media (min-width: 768px){
 	h1{
-		font-family:Arial;
-		font-size:50px;
-		margin-left:10px;
+		color:grey;
+		font-family:'Signpainter';
+		font-size:100px;
+		margin-left:40px;
+		font-weight:normal;
 	}
 
 	.water, .food, .speed, .atmosfeer{
@@ -54,6 +58,15 @@ h1{
 
 /* pc-scherm*/
 @media (min-width: 1024px) {
+
+	h1{
+
+		color:grey;
+		font-family:'Signpainter';
+		font-size:150px;
+		margin-left:40px;
+		font-weight:normal;
+	}
 
 	.flex-container {
 	  display: flex;
