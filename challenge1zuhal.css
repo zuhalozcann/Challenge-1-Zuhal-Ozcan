@@ -37,20 +37,20 @@ h1{
 		color:grey;
 		font-family:'Signpainter';
 		font-size:100px;
-		margin-left:40px;
+		text-align:center;
 		font-weight:normal;
 	}
 
 	.water, .food, .speed, .atmosfeer{
-		height: 500px !important;
-		width: 300px;
+		height: 400px !important;
+		width: 90% ;
 		display: flex;
 		justify-content: center;
 	}
 
 
 	canvas#waterBuffer, canvas#foodBuffer, canvas#speedBuffercanvas, canvas#bar-chart-horizontal{
-		width: 100%;
+		width: 90%;
 		height: auto;
 	}
 }
