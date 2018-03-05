@@ -70,7 +70,7 @@ let sBuffer = new Chart(speed, {
   data: {
     labels: [2010,2020,2030,2040, 2050],
     datasets: [{ 
-        data: [8933,2234,7777,6453,8000],
+        data: [950,1500,2000,2600,2000],
         label: "Brandstofverbruik",
         borderColor: "#3e95cd",
         fill: true
