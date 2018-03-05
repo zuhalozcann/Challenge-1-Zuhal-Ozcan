@@ -42,7 +42,7 @@ let fBuffer =  new Chart(food, {
           label: 'in kilos', 
           backgroundColor: ['#64A9AE', '#D4D1CC','#136B91', '#40736E'],
           borderWidth: 2,
-          data:[400,356,334,501]
+          data:[4,6,10,8,8,12,14,16,18,20]
         }
       ]   
     },

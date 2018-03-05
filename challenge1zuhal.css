@@ -60,11 +60,10 @@ h1{
 @media (min-width: 1024px) {
 
 	h1{
-
 		color:grey;
 		font-family:'Signpainter';
-		font-size:150px;
-		margin-left:40px;
+		font-size:90px;
+		text-align:center;
 		font-weight:normal;
 	}
 
@@ -76,12 +75,12 @@ h1{
 	.water, .food, .speed, .atmosfeer{
 		display: flex;
 		justify-content: center;
-		height: 300px !important;
+		height: 400px !important;
 		width: 50%  !important;
 	}
 
 	canvas#waterBuffer, canvas#foodBuffer, canvas#speedBuffer, canvas#bar-chart-horizontal{
-		width: 80%;
+		width: 90%;
 	}
 
 }
