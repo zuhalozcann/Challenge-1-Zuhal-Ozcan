@@ -42,7 +42,7 @@ let fBuffer =  new Chart(food, {
           label: 'in kilos', 
           backgroundColor: ['#64A9AE', '#D4D1CC','#136B91', '#40736E'],
           borderWidth: 2,
-          data:[4,6,10,8,8,12,14,16,18,20]
+          data:[8,10,12,8,8,12,14,16,18,30]
         }
       ]   
     },
@@ -70,7 +70,7 @@ let sBuffer = new Chart(speed, {
   data: {
     labels: [2010,2020,2030,2040, 2050],
     datasets: [{ 
-        data: [950,1500,2000,2600,2000],
+        data: [1000,1800,1500,2000,2000,2400],
         label: "Brandstofverbruik",
         borderColor: "#3e95cd",
         fill: true
